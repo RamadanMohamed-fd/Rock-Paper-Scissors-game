@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, hsl(237, 49%, 15%), hsl(214, 47%, 23%), hsl(237, 49%, 15%))
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+header {
+    margin: 20px auto;
+    border: 2px solid #ffffffb0;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+.rps {
+    line-height: .9;
+    font-weight: bolder;
+}
+
+.result {
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.result p {
+    color: hsl(217, 16%, 45%);
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.result span {
+    color: hsl(229, 64%, 46%);
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+.game {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+    width: 400px;
+    column-gap: 100px;
+    flex-wrap: wrap;
+}
+
+.game div {
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game .r {
+    border: 20px solid hsl(349, 71%, 52%);
+    box-shadow: 0px 5px 0px hsl(349deg 70% 56%);
+    position: relative;
+}
+
+.game .s {
+    border: 20px solid hsl(39, 89%, 49%);
+    box-shadow: 0px 5px 0px hsl(40, 84%, 53%);
+}
+
+.game .p {
+    border: 20px solid hsl(230, 89%, 62%);
+    box-shadow: 0px 5px 0px hsl(230, 89%, 65%);
+}
+
+.end {
+    background-color: white;
+    width: 200px;
+    color: black;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.appear {
+    display: block;
+}
+
+.end span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.final {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100px;
+}
+
+.final span {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.final button {
+    background-color: white;
+    padding: 10px 10px;
+    width: 150px;
+    font-size: 12px;
+    color: #373333b0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.picked {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffffb0;
+    width: 450px;
+    margin: auto;
+    display: none;
+    padding: 0px;
+}
